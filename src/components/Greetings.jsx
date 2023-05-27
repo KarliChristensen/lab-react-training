@@ -14,7 +14,7 @@ function Greetings({ lang, children }) {
     greetingText = 'Bonjour';
   }
 
-  return <div className='flex border-2 border-black m-10'>{greetingText} {children}</div>;
+  return <div className='flex border-2 border-black ml-10 mb-2'>{greetingText} {children}</div>;
 }
 
 export default Greetings;

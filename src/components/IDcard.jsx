@@ -2,7 +2,7 @@ import React from 'react';
 
 function IDcard({ lastName, firstName, gender, height, birth, image }) {
   return (
-    <div className="flex border-2 border-black m-10">
+    <div className="flex border-2 border-black ml-10 mb-2">
       <img src={image} alt="" className="min-w-128 max-w-128" />
       <div className="flex ">
         <ul>
