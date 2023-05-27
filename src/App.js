@@ -5,10 +5,11 @@ import Greetings from './components/Greetings';
 import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
+import Rating from './components/Rating';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex flex-col">
       <div>
         <h1 className="font-extrabold flex m-10 text-6xl">IDCard</h1>
         <IDcard
@@ -48,7 +49,7 @@ function App() {
       </div>
       <h1 className="font-extrabold flex m-10 text-6xl">Credit Cards</h1>
 
-      <div className='flex'>
+      <div className="flex">
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -81,6 +82,15 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
+      </div>
+      <h1 className="font-extrabold flex m-10 text-6xl">Rating</h1>
+      <div>
+        <Rating>0</Rating>
+        <Rating>1.49</Rating>
+        <Rating>1.5</Rating>
+        <Rating>3</Rating>
+        <Rating>4</Rating>
+        <Rating>5</Rating>
       </div>
     </div>
   );
