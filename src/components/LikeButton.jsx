@@ -11,7 +11,7 @@ function LikeButton() {
   };
 
   return (
-    <div>
+    <div className='mb-10'>
       <button id="like-button" onClick={handleClick}>{count} Likes</button>
     </div>
   );

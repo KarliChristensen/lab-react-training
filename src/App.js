@@ -7,6 +7,7 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
 
 function App() {
   return (
@@ -117,6 +118,12 @@ function App() {
       </div>
       <div>
         <LikeButton />
+      </div>
+      <div>
+        <ClickablePicture
+          image="https://as1.ftcdn.net/v2/jpg/02/09/98/08/1000_F_209980881_En0z019smwTH6szfnpq64j3vfbr78XeC.jpg"
+          imageClicked="https://previews.123rf.com/images/martialred/martialred1806/martialred180600036/105297926-mouse-pointer-arrow-clicked-or-cursor-click-line-art-icon-for-apps-and-websites.jpg"
+        />
       </div>
     </div>
   );
