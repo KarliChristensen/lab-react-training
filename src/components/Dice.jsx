@@ -8,10 +8,17 @@ import dice6 from '../assets/images/dice6.png';
 
 function Dice() {
   const [diceValue, setDiceValue] = useState(3);
+  const [rolling, setRolling] = useState(false);
 
   const rollDice = () => {
-    const newValue = Math.floor(Math.random() * 6) + 1;
-    setDiceValue(newValue);
+    if (!rolling) {
+      setRolling(true);
+      setTimeout(() => {
+        const newValue = Math.floor(Math.random() * 6) + 1;
+        setDiceValue(newValue);
+        setRolling(false);
+      }, 1000);
+    }
   };
 
   let diceImage;
