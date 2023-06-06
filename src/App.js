@@ -145,11 +145,11 @@ function App() {
           ]}
         />
       </div>
-      <div className='flex justify-center'>
+      <div className="flex justify-center">
         <NumbersTable limit={15} />
       </div>
       <div>
-        <Facebook data={profiles}/>
+        <Facebook data={profiles} />
       </div>
       <div>
         <SignupPage />
