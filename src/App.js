@@ -15,6 +15,7 @@ import RGBColorPicker from './components/RGBColorPicker';
 import SignupPage from './components/SignupPage';
 import Facebook from './components/Facebook';
 import profiles from './data/berlin.json';
+import SingleColorPicker from './components/SingleColorPicker';
 
 function App() {
   return (
@@ -156,6 +157,9 @@ function App() {
       </div>
       <div>
         <RGBColorPicker />
+      </div>
+      <div>
+        <SingleColorPicker />
       </div>
     </div>
   );
