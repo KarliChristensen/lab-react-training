@@ -13,6 +13,8 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import RGBColorPicker from './components/RGBColorPicker';
 import SignupPage from './components/SignupPage';
+import Facebook from './components/Facebook';
+import profiles from './data/berlin.json';
 
 function App() {
   return (
@@ -145,6 +147,9 @@ function App() {
       </div>
       <div className='flex justify-center'>
         <NumbersTable limit={15} />
+      </div>
+      <div>
+        <Facebook data={profiles}/>
       </div>
       <div>
         <SignupPage />

@@ -6,22 +6,22 @@ function DriverCard({ name, rating, img, car }) {
 
   switch (rate) {
     case 0:
-      rate = <div className="text-5xl">☆☆☆☆☆</div>;
+      rate = <p className="text-5xl">☆☆☆☆☆</p>;
       break;
     case 1:
-      rate = <div className="text-5xl">★☆☆☆☆</div>;
+      rate = <p className="text-5xl">★☆☆☆☆</p>;
       break;
     case 2:
-      rate = <div className="text-5xl">★★☆☆☆</div>;
+      rate = <p className="text-5xl">★★☆☆☆</p>;
       break;
     case 3:
-      rate = <div className="text-5xl">★★★☆☆</div>;
+      rate = <p className="text-5xl">★★★☆☆</p>;
       break;
     case 4:
-      rate = <div className="text-5xl">★★★★☆</div>;
+      rate = <p className="text-5xl">★★★★☆</p>;
       break;
     case 5:
-      rate = <div className="text-5xl">★★★★★</div>;
+      rate = <p className="text-5xl">★★★★★</p>;
       break;
     default:
       rate = 'You broke something';
@@ -32,7 +32,7 @@ function DriverCard({ name, rating, img, car }) {
       <img className="w-36 h-36 object-cover rounded-full" src={img} alt="" />
       <div className="flex flex-col items-start ml-10">
         <h1 className="text-white text-4xl font-bold mb-2">{name}</h1>
-        <p className="text-white mb-2">{rate}</p>
+        <div className="text-white mb-2">{rate}</div>
         <p className="text-white text-2xl mb-2">
           {car.model} - {car.licensePlate}{' '}
         </p>
