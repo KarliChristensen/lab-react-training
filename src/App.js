@@ -11,8 +11,8 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
-import SigupPage from './components/SigupPage';
 import RGBColorPicker from './components/RGBColorPicker';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -143,11 +143,11 @@ function App() {
           ]}
         />
       </div>
-      <div>
-        <NumbersTable />
+      <div className='flex justify-center'>
+        <NumbersTable limit={15} />
       </div>
       <div>
-        <SigupPage />
+        <SignupPage />
       </div>
       <div>
         <RGBColorPicker />
